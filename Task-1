@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DD fashion </h1>
+    <img src="https://i.pinimg.com/736x/7f/66/30/7f6630154ea3fbd26b7819f6c1a133fa.jpg">
+    <p>customization and Personalization Dress shops that cater to sports clubs<br>
+        often offer extensive customization options for uniforms and merchandise.<br>
+        This includes adding player names, numbers, and even sponsors' logos.<br>
+        Such customization not only enhances the professional look of the team<br>
+        but also fosters a sense of personal identity and pride among players.<br>
+        It allows clubs to stand out and create a unique brand image,<br>
+        both on and off the field.<b></p>
+    </p>
+</body>
+
+
+<style>
+
+h1{
+    text-align: center;
+}
+
+img {
+    height:450px;
+    width: 425px;
+    align-items: center;
+    position: relative;
+    left: 400;
+}
+p{
+     text-align:center ;
+     
+}
+
+</style>
+</html>
