@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion</title>
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1>DD fashion</h1>
+        <img src="https://i.pinimg.com/736x/7f/66/30/7f6630154ea3fbd26b7819f6c1a133fa.jpg" alt=" Image">
+        <p><b>customization and Personalization Dress shops that cater to sports clubs<br>
+            often offer extensive customization options for uniforms and merchandise.<br>
+            This includes adding player names, numbers, and even sponsors' logos.<br>
+            Such customization not only enhances the professional look of the team<br>
+            but also fosters a sense of personal identity and pride among players.<br>
+            It allows clubs to stand out and create a unique brand image,<br>
+            both on and off the field.</b></p>
+    </div>
+</body>
+</html>
+
+<style>
+    
+
+
+body {
+    background-color: rgb(213, 242, 244);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(213, 242, 244);
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    border: 2px solid rgb(255, 252, 252);
+    padding: 30px;
+    margin: 50px auto;
+    background-color: rgb(153, 153, 152);
+    width: 90%;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: justify;
+    letter-spacing: 0.2mm;
+    line-height: 1.6;
+    font-size: 1em;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5em;
+        padding: 25px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2em;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    p {
+        font-size: 0.85em;
+        margin: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    p {
+        font-size: 0.75em;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.2em;
+        padding: 5px;
+        margin: 5px auto;
+        width: 95%;
+    }
+
+    p {
+        font-size: 0.7em;
+        margin: 5px;
+    }
+}  
+</style>
