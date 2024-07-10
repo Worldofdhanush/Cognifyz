@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion</title>
+</head>
+<body>
+    <div class="container">
+        <h1>DD fashion</h1>
+        <img src="https://i.pinimg.com/736x/7f/66/30/7f6630154ea3fbd26b7819f6c1a133fa.jpg" alt="Zoo Image">
+        <p><b>customization and Personalization Dress shops that cater to sports clubs<br>
+        often offer extensive customization options for uniforms and merchandise.<br>
+        This includes adding player names, numbers, and even sponsors' logos.<br>
+        Such customization not only enhances the professional look of the team<br>
+        but also fosters a sense of personal identity and pride among players.<br>
+        It allows clubs to stand out and create a unique brand image,<br>
+        both on and off the field.</b></p>
+    </div>
+
+    <button id="colorButton">Change Background Color</button>
+
+    <div class="form-container">
+        <form id="userForm">
+            <h2>Registration Form</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span class="error-message" id="confirmPasswordError"></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+
+body {
+    background-color: rgb(213, 242, 244);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(213, 242, 244);
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    border: 2px solid rgb(10, 10, 10);
+    padding: 30px;
+    margin: 50px auto;
+    background-color: rgb(92, 91, 92);
+    width: 90%;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: justify;
+    letter-spacing: 0.2mm;
+    line-height: 1.6;
+    font-size: 1em;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.form-container {
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #737b9f;
+}
+
+#colorButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5em;
+        padding: 25px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2em;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    p {
+        font-size: 0.85em;
+        margin: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    p {
+        font-size: 0.75em;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.2em;
+        padding: 5px;
+        margin: 5px auto;
+        width: 95%;
+    }
+
+    p {
+        font-size: 0.7em;
+        margin: 5px;
+    }
+}
+
+
+#java script
+
+document.getElementById('colorButton').addEventListener('click', function() {
+    document.body.style.backgroundColor = getRandomColor();
+});
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+document.getElementById('userForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const errorMessages = document.querySelectorAll('.error-message');
+    errorMessages.forEach(error => error.style.display = 'none');
+
+    let isValid = true;
+
+    const username = document.getElementById('username').value;
+    if (username.trim() === '') {
+        isValid = false;
+        document.getElementById('usernameError').textContent = 'Username is required';
+        document.getElementById('usernameError').style.display = 'block';
+    }
+
+    const email = document.getElementById('email').value;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        isValid = false;
+        document.getElementById('emailError').textContent = 'Enter a valid email address';
+        document.getElementById('emailError').style.display = 'block';
+    }
+
+    const password = document.getElementById('password').value;
+    if (password.length < 6) {
+        isValid = false;
+        document.getElementById('passwordError').textContent = 'Password must be at least 6 characters';
+        document.getElementById('passwordError').style.display = 'block';
+    }
+
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    if (password !== confirmPassword) {
+        isValid = false;
+        document.getElementById('confirmPasswordError').textContent = 'Passwords do not match';
+        document.getElementById('confirmPasswordError').style.display = 'block';
+    }
+
+    if (isValid) {
+        alert('Form submitted successfully!');
+
+    }
+});
+
+</style>
+</html>
