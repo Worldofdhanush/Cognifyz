@@ -1,0 +1,65 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion </title>
+
+</head>
+<body>
+    <h1>DD fashion</h1>
+      <img src="https://i.pinimg.com/736x/7f/66/30/7f6630154ea3fbd26b7819f6c1a133fa.jpg"height="500px" width="700px">
+      <p><b>customization and Personalization Dress shops that cater to sports clubs<br>
+        often offer extensive customization options for uniforms and merchandise.<br>
+        This includes adding player names, numbers, and even sponsors' logos.<br>
+        Such customization not only enhances the professional look of the team<br>
+        but also fosters a sense of personal identity and pride among players.<br>
+        It allows clubs to stand out and create a unique brand image,<br>
+        both on and off the field.<b></p>
+    </body>
+    <style>  
+              html{
+                  background-color: rgb(14, 14, 14);
+              }
+              
+              h1 {
+                  color: rgb(1, 1, 15);
+                  font-family: verdana;
+                  font-size: 300%;
+                  text-align: center;
+                  border: 2px solid rgb(178, 178, 188);
+                  padding: 30px;
+                  margin: 50px;
+                  background-color: rgb(85, 84, 90);
+                  color: white;
+                  position: fixed;
+                  width: 88.3%;
+              }
+              p{
+                    position: relative;
+                    left: 700px;
+                    display: block;
+                    bottom: 100px;
+                    text-align: left;
+                    letter-spacing: 0.1mm;
+                    line-height: 6mm;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 11.5;
+                    
+                  }
+                img{
+                  position: relative;
+                  top: 173px;
+                  height: 412px;
+                  width: 386px;
+                }
+              
+                body{
+                  background-color: rgb(213, 242, 244);
+                  
+                }
+              </style>
+    </html>
+
+                  
+              
